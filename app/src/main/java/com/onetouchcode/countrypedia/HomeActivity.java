@@ -101,16 +101,16 @@ public class HomeActivity extends AppCompatActivity implements CountryAdapter.Cl
     protected void onNewIntent(Intent intent) {
         if (Intent.ACTION_SEARCH.equals(intent.getAction())) {
             String query = intent.getStringExtra(SearchManager.QUERY);
-            showVoiceSearchResult(query);
+            //showVoiceSearchResult(query);
         }
     }
 
-    private void showVoiceSearchResult(String query) {
+/*    private void showVoiceSearchResult(String query) {
         Intent intent = new Intent(this, VoiceSearchResultActivity.class);
         intent.putExtra("list", countryList);
         intent.putExtra("query", query);
         startActivity(intent);
-    }
+    }*/
 
     @Override
     public void onClick(Country country) {
